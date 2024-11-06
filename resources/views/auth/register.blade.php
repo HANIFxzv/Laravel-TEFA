@@ -1,4 +1,4 @@
-@extends('auth.layouts')
+@extends('layouts')
 
 @section('content')
 <h1>Register</h1>

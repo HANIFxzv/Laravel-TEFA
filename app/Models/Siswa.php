@@ -9,7 +9,10 @@ class Siswa extends Model
 {
     use HasFactory;
 
-    protected $fillable =[
+    // Jika nama tabel tidak mengikuti konvensi Laravel, uncomment baris berikut
+    // protected $table = 'nama_tabel_anda';
+
+    protected $fillable = [
         'id_user',
         'image',
         'nis',
@@ -18,5 +21,5 @@ class Siswa extends Model
         'kelas',
         'hp',
         'status',
-    ]
+    ];
 }

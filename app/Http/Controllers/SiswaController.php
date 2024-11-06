@@ -26,7 +26,7 @@ class SiswaController extends Controller
         )
         ->paginate(10);
 
-        return view('admin.siswa.index', compact('siswas'));
+        return view('admin.siswa.index', compact('siswa'));
     }
     //
 }

@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('siswas', function (Blueprint $table) {
             $table->id();
-            $table->interger('id_user');
-            $table->string('image');
-            $table->bigInterger('nis');
+            $table->integer('id_user'); // Perbaikan dari interger ke integer
+            $table->string('image')->nullable(); // Menambahkan nullable jika diperlukan
+            $table->bigInteger('nis'); // Perbaikan dari bigInterger ke bigInteger
             $table->string('tingkatan');
             $table->string('jurusan');
             $table->string('kelas');
-            $table->bigInterger('hp');
-            $table->Interger('status');
+            $table->bigInteger('hp'); // Perbaikan dari bigInterger ke bigInteger
+            $table->integer('status'); // Perbaikan dari Interger ke integer
             $table->timestamps();
         });
     }
